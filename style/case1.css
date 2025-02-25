@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+}
+
+.rectangles {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+main .rectangles:first-child {
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+main .rectangles:nth-child(2) {
+  right: 0;
+  top: 0;
+  background-color: green;
+}
+
+main .rectangles:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+}
+
+main .rectangles:nth-child(4) {
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 0, 170);
+}
+
+/* Inner Circles */
+
+.circle {
+  background-color: white;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.circle .square {
+  position: absolute;
+  background-color: red;
+  width: 70px;
+  height: 70px;
+  inset: 0;
+  margin: auto;
+}
+
+main .middleSquare {
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  height: 180px;
+  inset: 0;
+  margin: auto;
+}
+
+.middleSquare .circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+/* Outer Half Circles */
+
+section .pie {
+  position: absolute;
+  background-color: white;
+  width: 140px;
+  height: 140px;
+}
+
+section .pie:first-child {
+  border-bottom-right-radius: 100%;
+}
+
+section .pie:nth-child(2) {
+  right: 0;
+  border-bottom-left-radius: 100%;
+}
+
+section .pie:nth-child(3) {
+  left: 0;
+  bottom: 0;
+  border-top-right-radius: 100%;
+}
+
+section .pie:nth-child(4) {
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 100%;
+}
+
+section .halfCircles {
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  height: 180px;
+}
+
+section .halfCircles:first-child {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  top: -13vh;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+section .halfCircles:last-child {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  bottom: -13vh;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main {
+  overflow: hidden;
+}
