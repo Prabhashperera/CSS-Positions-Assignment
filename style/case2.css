@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alef", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-bar {
+  width: 100dvw;
+  height: 70px;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+span {
+  padding: 0 30px;
+}
+
+.nav-items {
+  height: fit-content;
+  width: fit-content;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  right: 0;
+  position: absolute;
+}
+
+.nav-logo img {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  margin: auto;
+  width: 180px;
+}
