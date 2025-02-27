@@ -4,3 +4,80 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.fixed-area {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 10px solid brown;
+  border-radius: 100px;
+}
+
+.circle::before {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  width: 163px;
+  height: 163px;
+  border: 10px solid red;
+  inset: 0;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle-area .container div {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.circle-area .container:first-child div {
+  background-color: purple;
+}
+.circle-area .container:nth-child(2) div {
+  background-color: #6363ff;
+}
+
+.circle-area .container:nth-child(3) div {
+  background-color: #ff1414;
+}
+
+.scrolls {
+  z-index: -1;
+  position: relative;
+  width: 164px;
+  height: 164px;
+  border-radius: 100px;
+}
+
+.scrolls h1 {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 163px;
+}
+
+.circle-area .container:nth-child(3) div h1 {
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: normal;
+}
