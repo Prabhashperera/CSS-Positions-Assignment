@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Alef", serif;
-  font-weight: 600;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -16,6 +16,7 @@ body {
   height: 70px;
   position: relative;
   background-color: whitesmoke;
+  color: rgb(46, 45, 45);
 }
 
 span {
@@ -43,34 +44,80 @@ span {
 }
 
 /* Hero */
-
 .side-bar {
   left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(69, 2, 127);
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(58, 2, 107);
+  overflow: auto;
 }
 
 .content {
   right: 0;
-  bottom: 0;
+  top: 10px;
   position: absolute;
   width: 80%;
-  height: 99%;
+  height: fit-content;
   background-color: rgb(255, 255, 255);
+  font-size: 10px;
+  padding: 15px;
 }
 
-/* Footer */
-.side-bar::after {
-  content: "Developed By Prabash";
-  font-weight: lighter;
+li {
+  list-style: none;
   color: white;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: rgb(53, 53, 53);
+  font-weight: normal;
+}
+
+.side-nav-list {
+  width: 20%;
+}
+
+.side-nav-list ul {
+  margin-top: 30px;
+  line-height: 30px;
+  margin-left: 20%;
+}
+
+footer {
   text-align: center;
+  font-weight: normal;
   line-height: 50px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  width: 100vw;
+  height: 50px;
+}
+
+.card {
+  position: absolute;
+  background-color: antiquewhite;
+  width: 34%;
+  height: 230px;
+  border: 1px solid black;
+  background: url("https://media.giphy.com/media/NXp9HM6YeuS0U/giphy.gif?cid=790b7611dbv8ake42zq6x9b30ng8hmdfq958orc4859y7fxg&ep=v1_gifs_search&rid=giphy.gif&ct=g")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.card-grp {
+  width: 100%;
+  height: 250px;
+}
+
+.card-grp .card:first-child {
+  margin-left: 10px;
+  left: 0;
+}
+
+.card-grp .card:nth-child(2) {
+  margin-right: 30px;
+  right: 0;
+}
+
+.card-grp .card:nth-child(3) {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
