@@ -3,12 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 .fixed-area {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  
 }
 
 .circle {
@@ -35,7 +37,7 @@
 
 .container {
   position: relative;
-  width: 100;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -58,17 +60,16 @@
 
 .scrolls {
   z-index: -1;
-  position: relative;
   width: 164px;
   height: 164px;
   border-radius: 100px;
 }
 
 .scrolls h1 {
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   text-align: center;
-  line-height: 163px;
+  line-height: 164px;
 }
 
 .circle-area .container:nth-child(3) div h1 {
