@@ -54,8 +54,9 @@ span {
 }
 
 .content {
+  border-top: 5px solid black;
   right: 0;
-  top: 10px;
+  top: 0;
   position: absolute;
   width: 80%;
   height: fit-content;
